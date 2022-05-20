@@ -10,6 +10,7 @@ h1 {
   font-size: 3rem;
   opacity: 0.8;
 }
+
 h2,
 p {
   color: #658ec6;
@@ -24,6 +25,7 @@ h3 {
 }
 
 main {
+  border: 2px solid red;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
@@ -33,27 +35,24 @@ main {
 }
 
 .glass {
+  border: 2px solid green;
   background: white;
   min-height: 80vh;
-  width: 60%;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3));
   border-radius: 2rem;
   z-index: 2;
   backdrop-filter: blur(2rem);
   display: flex;
 }
+
 .circle1,
 .circle2 {
   background: white;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.3)
-  );
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3));
   height: 20rem;
   width: 20rem;
   position: absolute;
@@ -64,30 +63,33 @@ main {
   top: 5%;
   right: 15%;
 }
+
 .circle2 {
   bottom: 5%;
   left: 10%;
 }
+
 .dashboard {
+  border: 2px solid yellow;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3));
   border-radius: 2rem;
 }
+
 .link {
   display: flex;
   margin: 2rem 0rem;
   padding: 1rem 5rem;
   align-items: center;
 }
+
 .link h2 {
   padding: 0rem 2rem;
 }
@@ -109,6 +111,7 @@ main {
   top: -10%;
   right: 10%;
 }
+
 .pro h2 {
   width: 40%;
   color: white;
@@ -121,11 +124,9 @@ main {
 }
 
 .status input {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3));
   border: none;
   width: 50%;
   padding: 0.5rem;
@@ -141,11 +142,9 @@ main {
 
 .card {
   display: flex;
-  background: linear-gradient(
-    to left top,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.5)
-  );
+  background: linear-gradient(to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5));
   border-radius: 1rem;
   margin: 2rem 0rem;
   padding: 2rem;
@@ -161,6 +160,7 @@ main {
   position: relative;
   overflow: hidden;
 }
+
 .progress::after {
   content: "";
   width: 100%;
@@ -169,6 +169,7 @@ main {
   position: absolute;
   left: 60%;
 }
+
 .card-info {
   display: flex;
   flex-direction: column;
@@ -180,4 +181,16 @@ main {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    width: max-content;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: max-content;
+  }
 }
